@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Portal</title>
+  <style>
+    body { display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh; background-color: #e8eaf6; }
+    .container { background-color: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 400px; margin-bottom: 20px; }
+    h2 { margin-bottom: 15px; }
+    input, button { width: 70%; margin: 10px 0; padding: 10px; border-radius: 10px; border: 1px solid #ccc; }
+    button { background-color: #3f51b5; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #303f9f; }
+  </style>
+</head>
+<body>
+
+  <!-- Edit Profile Section -->
+  <div class="container">
+    <h2>Edit Profile</h2>
+    <form id="edit-profile-form">
+      <input type="text" id="first-name" placeholder="First Name" required>
+      <input type="text" id="last-name" placeholder="Last Name" required>
+      <input type="text" id="cnic" placeholder="CNIC" required>
+      <button type="submit">Update Profile</button>
+    </form>
+  </div>
+
+  <!-- View Result Section -->
+  <div class="container">
+    <h2>View Result</h2>
+    <form id="view-result-form">
+      <input type="text" id="result-cnic" placeholder="Enter CNIC" required>
+      <button type="submit">Find Result</button>
+    </form>
+  </div>
+
+<script type="module" src="student.js"></script>
+<script type="module" src="firebase.js"></script>
+
+<script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
+<script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+</body>
+</html>

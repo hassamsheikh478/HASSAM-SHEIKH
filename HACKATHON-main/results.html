@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Student Results</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Optional: Link to CSS file for styling -->
+</head>
+<body>
+    <h1>All Student Results</h1>
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Total Marks</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody id="resultsBody">
+            <!-- Results will be populated here -->
+        </tbody>
+    </table>
+
+    <script type="module" src="firebaseConfig.js"></script>
+    <script type="module" src="results.js"></script>
+</body>
+</html>

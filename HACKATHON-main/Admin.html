@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f5f5f5; display: flex; justify-content: center; align-items: center; height: 120vh; }
+    .container { background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); width: 400px; }
+    h2 { text-align: center; color: #333; }
+    input, button { width: 80%; padding: 10px; margin: 10px 0; border-radius: 10px; border: 1px solid #ccc; }
+    button { background-color: #28a745; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #218838; }
+    .section { margin-bottom: 30px; }
+  </style>
+</head>
+<body>
+
+  <a href="results.html">View All Results</a>
+
+
+  <div class="container">
+    <!-- Add Students Form -->
+    <div class="section">
+      <h2>Add Student</h2>
+      <input type="text" id="first-name" placeholder="First Name" required>
+      <input type="text" id="last-name" placeholder="Last Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="cnic" placeholder="CNIC" required>
+      <button id="add-student-btn">Add Student</button>
+    </div>
+
+    <!-- Upload Student Marks Form -->
+    <div class="section">
+      <h2>Upload Student Marks</h2>
+      <input type="text" id="course" placeholder="Course" required>
+      <input type="text" id="student-cnic" placeholder="Student CNIC" required>
+      <input type="number" id="marks" placeholder="Marks" required>
+      <input type="number" id="total-marks" placeholder="Total Marks" required>
+      <input type="text" id="grade" placeholder="Grade" required>
+      <button id="upload-marks-btn">Upload Marks</button>
+    </div>
+
+    <button id="logout-btn">Logout</button>
+  </div>
+
+</body>
+</html>
+
+
+
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js"></script>
+  <script type="module" src="Admin.js"></script>
+    
